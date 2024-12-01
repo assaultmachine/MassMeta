@@ -12,6 +12,7 @@
 #if CHEBUREK_CAR
 	#include "features\cheburek_car\includes.dm"
 #endif
+#include "features\mt_machine\includes.dm"
 
 /* -- REVERTS -- */
 
