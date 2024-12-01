@@ -34,6 +34,7 @@
 	icon_state = "mt_machine_anim"
 	sleep(5 SECONDS)
 	icon_state = "mt_machine"
+	in_process = FALSE
 
 	var/mob/living/swap_target_1 = linked_chairs[1].buckled_mobs[1]
 	var/mob/living/swap_target_2 = linked_chairs[2].buckled_mobs[1]
@@ -64,8 +65,6 @@
 	if(key_1 && key_2)
 		swap_target_1.key = key_2
 		swap_target_2.key = key_1
-
-	in_process = FALSE
 
 /obj/machinery/mind_transferer/interact(mob/user)
 	. = ..()
